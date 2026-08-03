@@ -47,7 +47,7 @@ async function* getAllCommentsInPost(
 
 export async function handleNukePost(props: NukePostProps) {
   const startTime = Date.now();
-  let success = true;
+  let success: boolean;
   let message: string;
 
   const shouldLock = props.lock;
@@ -133,7 +133,7 @@ export async function handleNukePost(props: NukePostProps) {
 
 export async function handleNuke(props: NukeProps) {
   const startTime = Date.now();
-  let success = true;
+  let success: boolean;
   let message: string;
 
   const shouldLock = props.lock;
