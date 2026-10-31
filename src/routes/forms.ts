@@ -1,7 +1,6 @@
 import { Hono } from 'hono';
-import type { UiResponse } from '@devvit/web/shared';
+import { isT1, isT3, type UiResponse } from '@devvit/web/shared';
 import { context } from '@devvit/web/server';
-import { isT1, isT3 } from '@devvit/shared-types/tid.js';
 import { handleNuke, handleNukePost } from '../core/nuke';
 
 type NukeFormValues = {

@@ -1,6 +1,6 @@
 import { reddit } from '@devvit/web/server';
 import type { Comment, Post } from '@devvit/web/server';
-import type { T1, T3, T5 } from '@devvit/shared-types/tid.js';
+import type { T1, T3, T5 } from '@devvit/web/shared';
 
 export type NukeProps = {
   remove: boolean;
