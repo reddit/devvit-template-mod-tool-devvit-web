@@ -1,6 +1,5 @@
 import { Hono } from 'hono';
-import type { MenuItemRequest, UiResponse } from '@devvit/web/shared';
-import type { FormField } from '@devvit/shared-types/shared/form.js';
+import type { FormField, MenuItemRequest, UiResponse } from '@devvit/web/shared';
 
 export const menu = new Hono();
 
