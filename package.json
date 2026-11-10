@@ -23,7 +23,7 @@
     "@devvit/web": "0.15.3",
     "@hono/node-server": "^2.0.3",
     "devvit": "0.15.3",
-    "hono": "4.13.16"
+    "hono": "4.13.17"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
