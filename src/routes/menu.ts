@@ -11,6 +11,7 @@ const buildNukeFields = (targetId: string): FormField[] => [
     type: 'string',
     helpText: 'Auto-filled from the selected item.',
     required: true,
+    disabled: true,
     defaultValue: targetId,
   },
   {
