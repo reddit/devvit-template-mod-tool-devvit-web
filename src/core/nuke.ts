@@ -64,6 +64,10 @@ export async function handleNukePost(props: NukePostProps) {
       return { success: false, message: "Can't get user" };
     }
 
+    if (post.subredditId !== props.subredditId) {
+      return { success: false, message: 'You can only mop this subreddit.' };
+    }
+
     const modPermissions = await user.getModPermissionsForSubreddit(
       post.subredditName
     );
@@ -146,6 +150,10 @@ export async function handleNuke(props: NukeProps) {
 
     if (!user) {
       return { success: false, message: "Can't get user" };
+    }
+
+    if (comment.subredditId !== props.subredditId) {
+      return { success: false, message: 'You can only mop this subreddit.' };
     }
 
     const modPermissions = await user.getModPermissionsForSubreddit(
